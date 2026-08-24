@@ -1,0 +1,44 @@
+        body {
+        
+            margin: 20px;
+            background-color: rgb(84, 234, 254);
+        }
+        h1, h2 {
+            color: green;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: blueviolet;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        p {
+            color: red
+        }
+        .blue-paragraph {
+            color: blue;
+        }
+        #biggest {
+            font-size: 46px;
+        }
+        a:hover {
+            color: pink;
+        }
+        .bitcount-single {
+  font-family: "Bitcount Single", system-ui;
+  font-optical-sizing: auto;
+    font-weight: 400;
+}
+        .bdgravel {
+ font-family: "bd-gravel-vf", sans-serif;
+font-variation-settings: "ROND" 100;
+   
+}
