@@ -101,10 +101,6 @@ padding: 8px 15px;
     color: aqua;
 }
 
-/* <!-- Footer --> */
-
-
-
 /* Responsive Styles */
 
 @media (max-width: 768px) {
@@ -165,4 +161,59 @@ font-style: normal;
 }
 .nav-link:hover {
     color: rgb(0, 0, 0);
+}
+
+.container {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #2bb5a2;
+    align-items: center;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.box {
+    border: 1px solid #2bb5a2;
+    background-color: #03ffdd;
+    color:black;
+}
+.home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: blue; /* Blue background */
+  text-decoration: none; /* Removes the underline */
+  border-radius: 5px; /* Rounded corners */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+   color: white; 
+}
+
+.home-button:hover {
+  background-color: #0056b3; 
+  color: white;
+    text-decoration: none; 
+}
+
+:root {
+--font-size-h1: clamp(1rem, 5rem, 1.5vw, 10rem);
+--font-size-h1: clamp(1rem, 3rem, 1.5vw, 5rem);
+--font-size-h1: clamp(1rem, 2rem, 1.5vw, 3rem);
+--font-size-h1: clamp(1rem, 1rem, 1vw, 1.5rem);
+
+}
+h1 {
+    font-size: var(--font-size-h1);
+
+}
+h2 {
+    font-size: var(--font-size-h2);
+
+}
+h3 {
+    font-size: var(--font-size-h3);
+
+}
+p, a, button, li {
+    font-size: var(--font-size-p);
 }
