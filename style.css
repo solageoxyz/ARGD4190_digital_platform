@@ -12,23 +12,26 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+        font-size: 24px;
+            border-bottom: 2px dashed white;
+
+
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     font-family:'bitestencil';
     text-transform: uppercase;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 8px;
+  
 }
 
 .nav-link {
     list-style: none;
     display: flex;
     gap: 15px;
-    font-size: 18px;
+    font-size: 25px;
+ 
 }
 
 
@@ -39,7 +42,7 @@ font-weight: bold;
 padding: 8px 15px;
 }
 
-.nav-link:hover {
+.nav-link a:hover {
     color:aqua
 }
 /* <!-- About section --> */
@@ -52,7 +55,6 @@ padding: 8px 15px;
 .about h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    font-family: 'bitestencil', Gadget, sans-serif;
 }
 
 #about p {
@@ -72,7 +74,6 @@ padding: 8px 15px;
 .skill h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    font-family: 'bitestencil';
 }
 
 .grid {
@@ -81,7 +82,8 @@ padding: 8px 15px;
     gap: 20px;
     padding: 20px;
     background: rgb(8, 255, 243);
-    border-radius: 8px;   
+    border-radius: 8px;  
+    border: 2px dashed #007f6e; 
 }
 
 .card {
@@ -91,7 +93,6 @@ padding: 8px 15px;
     font-weight: bold;
     text-align: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    font-family: 'bitestencil', Gadget, sans-serif;
     color: white;
 }
 
@@ -144,12 +145,28 @@ padding: 8px 15px;
         grid-template-columns: 1fr ;
     }
 }
-
+/* FONTS FONTS FONTS */
   .bitestencil{
     font-family: "bite-stencil", sans-serif;
 font-weight: 900;
 font-style: normal;
   } 
+    .megrim{
+    font-family: "megrim", sans-serif;
+font-weight: 400;
+font-style: normal;
+    }
+    .pixel {font-family: "louvette-pixel", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+
+
+
+
+
+
   body {
     background-color: #2bb5a2;
 }
@@ -163,7 +180,7 @@ font-style: normal;
     color: rgb(0, 0, 0);
 }
 
-.container {
+/*.container {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
@@ -171,13 +188,22 @@ font-style: normal;
     align-items: center;
     width: 200px;
     border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 0.5rem;
+    justify-items: end;
+    gap: 1rem;
+
 }
+    */
 
 .box {
-    border: 1px solid #2bb5a2;
+    border: 2px solid #007f6e;
     background-color: #03ffdd;
     color:black;
 }
+
 .home-button {
   display: inline-block;
   padding: 10px 20px;
@@ -216,4 +242,65 @@ h3 {
 }
 p, a, button, li {
     font-size: var(--font-size-p);
+}
+
+
+
+
+
+
+/* resume block testing for during class part; actual container is above */
+.container {
+display: grid;
+grid-template-areas: "nav nav nav"
+                     "main main side"
+                     "footer footer footer";
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-areas: "nav"
+                         "main"
+                         "side"
+                         "footer";
+  }
+}
+
+.nav {
+  grid-area: nav;
+}
+.main {
+    min-height: 200px;
+  grid-area: main;
+}
+.side {
+    grid-area: side;
+    min-height: 100px;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+
+.full-image {
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+        display: block;
+}
+
+.btn-link {
+   background: #322bb5;
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+.btn-link:hover {
+   transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    color: aqua;
 }
