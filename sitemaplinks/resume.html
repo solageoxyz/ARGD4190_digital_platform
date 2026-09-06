@@ -1,37 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://use.typekit.net/yuk8wzr.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.typekit.net/yuk8wzr.css">
-    <link rel="stylesheet" href="../style.css">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio</title>
+    <title>Graphic Design Works</title>
     
+    <!-- External Fonts & Stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/yuk8wzr.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+
     <header class="header megrim">
         <h1>resume</h1>
-        <h1><div class=" nav-link"> <li><a href="../index.html">home</a></li></div>
-            </h1>   
+        <nav>
+            <ul class="nav-link">
+                <li><a href="../index.html">home</a></li>
+            </ul>
+        </nav>     
     </header>
+ <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-   <!-- <h1 class="bitestencil">Iris Chang</h1>
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: #f4f4f4;
+            color: #333333;
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
 
-    <p class="megrim"> Hello, my name is Iris Chang. I am currently a college student at the university of georgia, double majoring in graphic design and advertising. I am an outgoing and hard working person, always eager to get outside of my comfort zone and learn new things.</p>
-  -->
-  <img src="../images/resume.jpg" alt="resume" class="full-image">
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 60px 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
 
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
 
-<!--  <div class="container">
-     <div class="box nav">nav</div>
-    <div class="box main">main</div>
-    <div class="box side">side</div>
-    <div class="box footer">footer</div>
- </div>  -->
-   
+        .header-left {
+            max-width: 65%;
+        }
+
+        .name {
+            font-size: 38px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 12px;
+            line-height: 1.1;
+        }
+
+        .summary {
+            font-size: 13.5px;
+            color: #333333;
+            line-height: 1.45;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 12.5px;
+            line-height: 1.35;
+            color: #000000;
+        }
+
+        .contact-info .email {
+            font-weight: bold;
+        }
+
+        /* Layout Grid */
+        .main-content {
+            display: flex;
+            gap: 50px;
+        }
+
+        .left-column {
+            flex: 2;
+        }
+
+        .right-column {
+            flex: 1;
+        }
+
+        /* Section Styling */
+        .section-title {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            color: #4682B4; /* Steel blue color matching the image */
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+
+        /* Experience & Education Items */
+        .item {
+            margin-bottom: 22px;
+        }
+
+        .item-header {
+            font-size: 15px;
+            color: #000000;
+            margin-bottom: 3px;
+        }
+
+        .company-name {
+            font-weight: bold;
+        }
+
+        .job-title {
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        .date {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 10.5px;
+            color: #777777;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .description {
+            font-size: 13px;
+            color: #555555;
+            line-height: 1.45;
+        }
+
+        /* Skills Section */
+        .skills-list p {
+            font-size: 13.5px;
+            color: #555555;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        
+        <!-- Header -->
+        <header>
+            <div class="header-left">
+                <h1 class="name">Iris Chang</h1>
+                <p class="summary">
+                    Hello, my name is Iris Chang. I am currently a college student at the University of Georgia, double majoring in Graphic Design and Advertising. I am an outgoing and hard working person, always eager to get outside of my comfort zone and learn something new. Feel free to contact me through email or text!
+                </p>
+            </div>
+            <div class="contact-info">
+                <p>4325 Hastings Drive</p>
+                <p>Cumming, GA 30041</p>
+                <p>404-326-2625</p>
+                <p class="email">iris.chang.0209@gmail.com</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            
+            <!-- Left Column: Experience & Education -->
+            <div class="left-column">
+                
+                <div class="section-title">Experience</div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="company-name">E-PLEX Education, Duluth</span> — <span class="job-title">teacher / social media manager</span>
+                    </div>
+                    <div class="date">May 2025 - July 2025</div>
+                    <p class="description">
+                        Provided childcare support for students in grades K–12 and delivered academic tutoring in English Language Arts and math for 6th–8th graders for their summer camp. Additionally responsible for designing promotional materials and managing the organization's social media presence.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="company-name">Rouge Magazine, Athens</span> — <span class="job-title">graphic designer / marketing team</span>
+                    </div>
+                    <div class="date">August 2025 - December 2025</div>
+                    <p class="description">
+                        Produced editorial graphic spreads and visual layouts for the fashion magazine. Planned and coordinated marketing events and team-building activities to promote the magazine and strengthen internal collaboration.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="company-name">AASA; Asian American Student Association, Athens</span><br>
+                        — <span class="job-title">Historian / Public Relations Chair</span>
+                    </div>
+                    <div class="date">August 2025 - Present</div>
+                    <p class="description">
+                        Created and managed social media content including graphics, videos, as well as managing email communications between different organizations. Also took photos throughout the year for group events to provide media for the social media pages.
+                    </p>
+                </div>
+
+                <div class="section-title">Education</div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="company-name">South Forsyth High School, Cumming</span> — <span class="job-title">high school diploma</span>
+                    </div>
+                    <div class="date">August 2020 - May 2024</div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="company-name">University of Georgia, Athens</span> — <span class="job-title">bachelor's degree</span>
+                    </div>
+                    <div class="date">August 2024 - Present</div>
+                    <p class="description">
+                        Currently a student working for a bachelor's degree double majoring in Advertising and in Graphic Design.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Skills -->
+            <div class="right-column">
+                <div class="section-title">Skills</div>
+                <div class="skills-list">
+                    <p>Proficient English</p>
+                    <p>Proficient Korean</p>
+                    <p>Experience in Canva, CapCut, Adobe Indesign, Adobe Photoshop, and Procreate</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
 </html>

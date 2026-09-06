@@ -61,6 +61,7 @@ padding: 8px 15px;
     font-size: 18px;
     line-height: 1.6;
     margin-top: 5px;
+    text-align: left;
 }
 
 /* <!-- Skill section --> */
@@ -160,6 +161,13 @@ font-style: normal;
 font-weight: 700;
 font-style: normal;
 }
+
+  .pixelindex {font-family: "louvette-pixel", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 50px;
+}
+
 
 
 
@@ -303,4 +311,55 @@ grid-template-areas: "nav nav nav"
    transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     color: aqua;
+}
+
+#skill {
+    clear: both;
+}
+
+
+
+/* Gallery Container Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Gallery Card Box */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #322bb5; /* Matches your card style theme */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image Fit & Hover Effect */
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Keeps image proportions clean without stretching */
+    display: block;
+    transition: scale 0.3s ease;
+}
+
+/* Hover Lift Effect */
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover img {
+    scale: 1.05;
+}
+
+/* Optional Overlay Caption */
+.caption {
+    padding: 12px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
 }
