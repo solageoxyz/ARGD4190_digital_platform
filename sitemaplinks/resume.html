@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graphic Design Works</title>
@@ -12,18 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/yuk8wzr.css">
     <link rel="stylesheet" href="../style.css">
-</head>
-<body>
 
-    <header class="header megrim">
-        <h1>resume</h1>
-        <nav>
-            <ul class="nav-link">
-                <li><a href="../index.html">home</a></li>
-            </ul>
-        </nav>     
-    </header>
- <style>
+    <style>
         * {
             box-sizing: border-box;
             margin: 0;
@@ -44,18 +33,21 @@
             background: #ffffff;
             padding: 60px 70px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+            width: 100%;
         }
 
-        /* Header Section */
-        header {
+        /* Resume Inner Header Section */
+        .resume-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             margin-bottom: 30px;
+            gap: 20px;
         }
 
         .header-left {
             max-width: 65%;
+            flex: 1;
         }
 
         .name {
@@ -77,6 +69,7 @@
             font-size: 12.5px;
             line-height: 1.35;
             color: #000000;
+            word-break: break-word;
         }
 
         .contact-info .email {
@@ -152,14 +145,57 @@
             line-height: 1.4;
         }
 
+        /* ==========================================
+           Mobile & Tablet Responsive Rules
+           ========================================== */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .resume-container {
+                padding: 30px 20px;
+            }
+
+            .resume-header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .header-left {
+                max-width: 100%;
+            }
+
+            .contact-info {
+                text-align: left;
+            }
+
+            .main-content {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .name {
+                font-size: 30px;
+            }
+        }
     </style>
 </head>
 <body>
 
+    <header class="header megrim">
+        <h1>resume</h1>
+        <nav>
+            <ul class="nav-link">
+                <li><a href="../index.html">home</a></li>
+            </ul>
+        </nav>     
+    </header>
+
     <div class="resume-container">
         
-        <!-- Header -->
-        <header>
+        <!-- Resume Inner Header -->
+        <div class="resume-header">
             <div class="header-left">
                 <h1 class="name">Iris Chang</h1>
                 <p class="summary">
@@ -172,7 +208,7 @@
                 <p>404-326-2625</p>
                 <p class="email">iris.chang.0209@gmail.com</p>
             </div>
-        </header>
+        </div>
 
         <!-- Main Content -->
         <div class="main-content">
