@@ -5,7 +5,7 @@
 }
 
 .header { 
-    background: blue;
+    background: #0000ff;
     padding: 20px;
     color: white;
     display: flex;
@@ -43,7 +43,7 @@ padding: 8px 15px;
 }
 
 .nav-link a:hover {
-    color:aqua
+    color:#00ffff
 }
 /* <!-- About section --> */
 
